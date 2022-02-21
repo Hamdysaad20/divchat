@@ -7,25 +7,25 @@ export default function Layout({ children }) {
   const setting = [
     {
       href: "/settings",
-      title: "../public/ico/settings.png",
+      title: "ico/settings.png",
     },
     {
       href: "/user",
-      title: "../public/ico/user.png",
+      title: "ico/user.png",
     },
   ];
   const menuItems = [
     {
       href: "/",
-      title: "../public/ico/main.png",
+      title: "ico/main.png",
     },
     {
       href: "/chat",
-      title: "../public/ico/chat.png",
+      title: "ico/chat.png",
     },
     {
       href: "/cash",
-      title: "../public/ico/cash.png",
+      title: "ico/cash.png",
     },
   ];
   return (
