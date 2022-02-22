@@ -29,7 +29,7 @@ export default function Layout({ children }) {
     },
   ];
   return (
-    <div className='min-h-screen  flex flex-col'>
+    <div className='h-screen bglol flex flex-col'>
       <header className='z-50 border-slate-300/10  opacity-2 bg-gray-900/60 backdrop-blur-md sticky top-0 h-20 flex justify-center items-center font-semibold uppercase'>
         <div className='hover:bg-gray-800 duration-300 px-4 rounded-xl py-2'>
           <Image
