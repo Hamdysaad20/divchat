@@ -53,7 +53,7 @@ function chat() {
                   h1
                   size={20}
                   css={{
-                    textGradient: "1deg, $pink500 -80%, $white 90%",
+                    textGradient: " $white -80%, $white 90%",
                   }}
                   weight='bold'>
                   {userName}
