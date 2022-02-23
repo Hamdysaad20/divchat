@@ -14,13 +14,7 @@ function UserChat() {
       <div>
         <Grid.Container gap={2}>
           <Grid>
-            <Avatar
-              src='/divico.png'
-              size='lg'
-              color='gradient'
-              bordered
-              zoomed
-            />
+            <Avatar src='/divico.png' size='lg' color='error' bordered zoomed />
           </Grid>
           <div>
             <Text
