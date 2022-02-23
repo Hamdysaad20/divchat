@@ -47,7 +47,7 @@ export default function Layout({ children }) {
               <ul className='text-center justify-center  inline-block'>
                 {menuItems.map(({ href, title }) => (
                   <li className='p-1  mt-5 ' key={title}>
-                    <Link href={href}>
+                    <Link href={href} passHref>
                       <a
                         className={`flex p-2 m-auto w-[80%]  bg-gray-800 rounded hover:bg-red-700/20 cursor-pointer ${
                           Router.asPath === href &&
@@ -68,7 +68,7 @@ export default function Layout({ children }) {
             <div className='absolute bottom-[10%] '>
               {setting.map(({ href, title }) => (
                 <div className=' m-2 ' key={title}>
-                  <Link href={href}>
+                  <Link href={href} passHref>
                     <div className='p-2'>
                       <a
                         className={`flex p-2 m-auto w-[80%] ${
