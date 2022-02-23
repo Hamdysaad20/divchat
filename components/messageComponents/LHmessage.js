@@ -1,4 +1,4 @@
-import { Avatar, Grid } from "@nextui-org/react";
+import { Avatar } from "@nextui-org/react";
 import React from "react";
 
 function LHmessage() {
@@ -10,7 +10,7 @@ function LHmessage() {
 
       <div className='max-w-[30%] ml-4 mt-9 inline-block lg:mt-4'>
         <div className='bg-blue-900/60  font-normal  mx-3 px-4 py-1 rounded-lg'>
-          <h1 className='text-neutral-200 text-xl'>Hi i'm a client !</h1>
+          <h1 className='text-neutral-200 text-xl'>Hi iam a client !</h1>
         </div>
         <div className='bg-blue-900/60 h-2 w-2 absolute mt-[-7px] rounded-full mr-[-2px] -rotate-12'></div>
       </div>
