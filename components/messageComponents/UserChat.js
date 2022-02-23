@@ -2,13 +2,6 @@ import { Grid, Avatar, Text } from "@nextui-org/react";
 import React from "react";
 
 function UserChat() {
-  const chatUsers = [
-    {
-      userImg: "",
-      userName: "",
-      userText: "ssssssssssssssssssss",
-    },
-  ];
   return (
     <div className='bg-gray-900 w-full h-20'>
       <div>
