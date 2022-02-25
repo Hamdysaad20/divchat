@@ -21,7 +21,7 @@ function SidebarM() {
   ];
 
   return (
-    <div className='h-screen overflow-hidden overflow-y-scroll'>
+    <div className='h-screen overflow-hidden duration-300 hover:overflow-y-scroll'>
       <aside className='w-60  h-full lg:w-72 ml-20 bg-gray-900/80 '>
         <div className=''>
           <div className='mb-2  select-none cursor-pointer justify-center text-center hover:bg-slate-900 duration-500 py-2 bg-gray-900'>
@@ -43,6 +43,7 @@ function SidebarM() {
               <Grid.Container gap={2}>
                 <Grid>
                   <Avatar
+                  className="z-10"
                     src={userImg}
                     size='lg'
                     color='gradient'
@@ -69,7 +70,7 @@ function SidebarM() {
           </div>
         ))}
       </aside>
-      ;
+      
     </div>
   );
 }

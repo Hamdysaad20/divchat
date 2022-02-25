@@ -3,7 +3,9 @@ import Layout from "../components/Layout";
 import { NextUIProvider } from "@nextui-org/react";
 import Head from "next/head";
 
+
 function MyApp({ Component, pageProps }) {
+  
   return (
     <NextUIProvider>
       <Head>

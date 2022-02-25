@@ -3,7 +3,7 @@ import React from "react";
 
 function RHmessage() {
   return (
-    <di className='flex-cols-2 flex'>
+    <di className='flex-cols-2  flex'>
       <div className='mt-5'>
         <Avatar
           src='/divico.png'
@@ -14,7 +14,7 @@ function RHmessage() {
         />
       </div>
 
-      <div className='max-w-[30%] ml-4 mt-9 inline-block lg:mt-4'>
+      <div className='max-w-[30%] ml-4 place-content-center mt-2 md:mt-3 lg:mt-2 inline-block'>
         <div className='bg-red-700/90  font-normal  mx-3 px-4 py-1 rounded-lg'>
           <h1 className='text-neutral-200 text-xl'> Hi iam admin here!</h1>
         </div>

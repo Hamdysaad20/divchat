@@ -4,11 +4,13 @@ import SidebarM from "../components/messageComponents/SidebarM";
 
 function chat() {
   return (
-    <div className='flex w-full h-full overflow-hidden '>
-      <SidebarM />
-      <div className='ml-1 relative h-screen'>
+    <div className='flex w-full h-full  overflow-hidden '>
+     <div className='flex overflow-hidden h-screen'>
+     <SidebarM />
+     
         <MessageArea />
-      </div>
+      
+     </div>
     </div>
   );
 }
