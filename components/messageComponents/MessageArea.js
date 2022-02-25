@@ -45,8 +45,8 @@ function MessageArea() {
         <RHmessage />
         <LHmessage />
         <RHmessage />
-<div className=' flex items-center bg-gray-900  m-2 -ml-1  z-50 '>
-            <form className='fixed  flex w-[40%] md:w-[60%] lg:w-[65%]   justify-center  bottom-0  p-1 m-2 flex-row bg-gray-600/60  rounded-md px-4 py-3 z-10 max-w-screen-lg  dark:text-white  shadow-md'>
+<div className=' flex items-center   m-2 -ml-1  z-50 '>
+            <form className='fixed  z-100 flex w-[40%] md:w-[60%] lg:w-[65%]   justify-center  bottom-0  p-1 m-2 flex-row bg-gray-600  rounded-md px-4 py-3  max-w-screen-lg  dark:text-white  shadow-md'>
               <input
                 type='text'
                 placeholder='Type your message here...'
@@ -54,7 +54,7 @@ function MessageArea() {
               />
               <button
                 type='submit'
-                className='uppercase font-semibold text-sm tracking-wider text-gray-500 hover:text-gray-900 dark:hover:text-white transition-colors'>
+                className='uppercase font-semibold text-sm tracking-wider text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors'>
                 Send
               </button>
             </form>
