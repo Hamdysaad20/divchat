@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { Tooltip } from "@nextui-org/react";
 
 export default function Layout({ children }) {
   const Router = useRouter();
@@ -8,24 +9,31 @@ export default function Layout({ children }) {
     {
       href: "/settings",
       title: "ico/settings.png",
+      HoverTips:"Settings"
+
     },
     {
       href: "/user",
       title: "ico/user.png",
+      HoverTips:"Profile"
+
     },
   ];
   const menuItems = [
     {
       href: "/",
       title: "ico/main.png",
+      HoverTips:"Main"
     },
     {
       href: "/chat",
       title: "ico/chat.png",
+      HoverTips:"Chat"
     },
     {
       href: "/cash",
       title: "ico/cash.png",
+      HoverTips:"Payment Records"
     },
   ];
   return (
@@ -46,29 +54,38 @@ export default function Layout({ children }) {
           <div className=' '>
             <nav className='absolute top-[30%]  ml-3'>
               <ul className='text-center justify-center  inline-block'>
-                {menuItems.map(({ href, title }) => (
-                  <li className='p-1  mt-5 ' key={title}>
+                {menuItems.map(({ href, title,HoverTips }) => (
+                        <Tooltip  key={title} placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
+
+                 <li className='p-1  mt-5 '>
+                 
                     <Link href={href} passHref>
                       <a
                         className={`flex p-2 m-auto w-[80%]  bg-gray-800 rounded hover:bg-red-700/20 cursor-pointer ${
                           Router.asPath === href &&
                           "bg-red-500/50 text-white duration-300"
                         }`}>
+
                         <Image
                           src={`/${title}`}
                           alt='navigation'
                           height='35'
                           width='35'
                         />
+                         
                       </a>
                     </Link>
+                    
                   </li>
+                  </Tooltip>
                 ))}
               </ul>
             </nav>
             <div className='absolute bottom-[10%] '>
-              {setting.map(({ href, title }) => (
-                <div className=' m-2 ' key={title}>
+              {setting.map(({ href, title ,HoverTips}) => (
+                                       <Tooltip  key={title}  key={title} placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
+
+               <div className=' m-2 '>
                   <Link href={href} passHref>
                     <div className='p-2'>
                       <a
@@ -86,6 +103,7 @@ export default function Layout({ children }) {
                     </div>
                   </Link>
                 </div>
+                </Tooltip>
               ))}
             </div>
           </div>
