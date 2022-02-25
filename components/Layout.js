@@ -9,13 +9,13 @@ export default function Layout({ children }) {
     {
       href: "/settings",
       title: "ico/settings.png",
-      HoverTips:"Settings"
+      HoverTips:"Settings",
 
     },
     {
       href: "/user",
       title: "ico/user.png",
-      HoverTips:"Profile"
+      HoverTips:"Profile",
 
     },
   ];
@@ -49,16 +49,16 @@ export default function Layout({ children }) {
           />
         </div>
       </header>
-      <div className='md:flex flex-col hidden overflow-hidden  md:flex-row flex-1'>
-        <aside className='  overflow-hidden  opacity-2 bg-gray-900/30 fixed backdrop-blur-md w-full h-full md:w-20'>
+      <div className='md:flex flex-col hidden overflow-hidden  z-100 md:flex-row flex-1'>
+        <aside className='  overflow-hidden  opacity-2  z-100 bg-gray-900/30 fixed backdrop-blur-md w-full h-full md:w-20'>
           <div className=' '>
             <nav className='absolute top-[30%]  ml-3'>
               <ul className='text-center justify-center  inline-block'>
-                {menuItems.map(({ href, title,HoverTips }) => (
-  <Tooltip  key={title} placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
+                {menuItems.map(({ href, title , HoverTips }) => (
 
-                 <li className='p-1  mt-5 '>
-                 
+                 <li className='p-1  mt-5 '  key={title}>
+                   <Tooltip  placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
+
                     <Link href={href} passHref>
                       <a
                         className={`flex p-2 m-auto w-[80%]  bg-gray-800 rounded hover:bg-red-700/20 cursor-pointer ${
@@ -75,17 +75,18 @@ export default function Layout({ children }) {
                          
                       </a>
                     </Link>
-                    
+                    </Tooltip>
                   </li>
-                  </Tooltip>
+                  
                 ))}
               </ul>
             </nav>
             <div className='absolute bottom-[10%] '>
               {setting.map(({ href, title ,HoverTips}) => (
-   <Tooltip  key={title} placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
 
-               <div className=' m-2 '>
+               <div  key={title} className=' m-2 '>
+                    <Tooltip   placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
+
                   <Link href={href} passHref>
                     <div className='p-2'>
                       <a
@@ -102,8 +103,9 @@ export default function Layout({ children }) {
                       </a>
                     </div>
                   </Link>
+                  </Tooltip>
                 </div>
-                </Tooltip>
+               
               ))}
             </div>
           </div>
