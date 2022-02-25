@@ -55,7 +55,7 @@ export default function Layout({ children }) {
             <nav className='absolute top-[30%]  ml-3'>
               <ul className='text-center justify-center  inline-block'>
                 {menuItems.map(({ href, title,HoverTips }) => (
-                        <Tooltip  key={title} placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
+  <Tooltip  key={title} placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
 
                  <li className='p-1  mt-5 '>
                  
@@ -83,7 +83,7 @@ export default function Layout({ children }) {
             </nav>
             <div className='absolute bottom-[10%] '>
               {setting.map(({ href, title ,HoverTips}) => (
-                                       <Tooltip  key={title}  key={title} placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
+   <Tooltip  key={title} placement="right"  content={HoverTips} contentColor="default" rounded color="primary" >
 
                <div className=' m-2 '>
                   <Link href={href} passHref>
