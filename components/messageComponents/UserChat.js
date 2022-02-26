@@ -3,7 +3,7 @@ import React from "react";
 
 function UserChat() {
   return (
-    <div className='bg-gray-900  w-full h-20'>
+    <div className='bg-gray-900/95  backdrop-blur-md fixed z-120  w-full h-20'>
       <div>
         <Grid.Container gap={2}>
           <Grid>

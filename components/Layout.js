@@ -38,7 +38,7 @@ export default function Layout({ children }) {
   ];
   return (
     <div className='  bglol flex flex-col'>
-      <header className='  z-100 border-slate-300/10  opacity-2 bg-gray-900/60 backdrop-blur-md sticky top-0 h-15 flex justify-center items-center font-semibold uppercase'>
+      <header className='  z-120   opacity-1 bg-gray-900 backdrop-blur-md sticky top-0 h-15 flex justify-center items-center font-semibold uppercase'>
 
         <div className=' cursor-pointer select-none duration-300 px-4 rounded-xl py-1'>
           <Image

@@ -12,7 +12,8 @@ function MessageArea() {
   return (
     <div id="messageBody" className='mb-16 w-screen overflow-hidden overflow-y-scroll  relative  m-0 p-0'>
       <UserChat />
-      <div  className='ml-3   justify-center overflow-hidden overflow-y-scroll'>
+      <div  className='ml-3 z-20 mt-32 justify-center overflow-hidden overflow-y-scroll'>
+        <div className='text-center mr-[20%] bg '><h1 className='inline-block px-5 rounded-2xl py-2 bg-gray-800/50'>There is no more messages</h1></div>
         <LHmessage />
         <RHmessage />
         <LHmessage />

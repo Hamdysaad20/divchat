@@ -46,7 +46,7 @@ function SidebarM() {
                   className="z-10"
                     src={userImg}
                     size='lg'
-                    color='gradient'
+                    color='error'
                     bordered
                     zoomed
                   />

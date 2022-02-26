@@ -7,7 +7,7 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   
   return (
-    <NextUIProvider>
+                                           <NextUIProvider>
       <Head>
         <title>Divchat</title>
         <meta property='og:title' content='My page title' key='title' />
