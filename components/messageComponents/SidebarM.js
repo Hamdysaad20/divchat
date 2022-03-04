@@ -18,6 +18,67 @@ function SidebarM() {
       userName: "Hamdy Saad",
       userText: "ssssssssssssssssssss",
     },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+      
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
+    {
+      userImg: "/divico.png",
+      userName: "Hamdy Saad",
+      userText: "ssssssssssssssssssss",
+    },
   ];
 
   return (
@@ -36,7 +97,7 @@ function SidebarM() {
             </Text>
           </div>
         </div>
-<div className=' overflow-hidden hover:overflow-y-scroll  h-screen'>
+<div className='scroll-mb-10 overflow-hidden hover:overflow-y-scroll  h-screen'>
         {chatUsers.map(({ userImg, userName, userText }) => (
           <div className=' ' key={userName}>
             <div className=' hover:bg-gray-700/50'>

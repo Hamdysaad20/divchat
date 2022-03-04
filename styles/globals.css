@@ -77,3 +77,18 @@ body {
   font-weight: 700;
   font-display: swap;
 }
+
+
+
+@media  (max-height: 550px) {
+  .hidden-mob {
+    display: none;
+  }
+}
+@media  (min-width: 550px) {
+  .input-filed-size {
+    margin-right: 0;
+    margin-left: 0;
+    width: auto
+  }
+}

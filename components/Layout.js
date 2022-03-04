@@ -49,9 +49,10 @@ export default function Layout({ children }) {
           />
         </div>
       </header>
-      <div className='md:flex flex-col hidden overflow-hidden  z-100 md:flex-row flex-1'>
-        <aside className='  overflow-hidden  opacity-2  z-100 bg-gray-900/30 fixed backdrop-blur-md w-full h-full md:w-20'>
-          <div className=' '>
+      <div style={{scrollPaddingBottom:"20px"}} className='md:flex flex-col hidden overflow-hidden  z-100 md:flex-row flex-1'>
+        <aside  className=' overflow-y-auto overflow-hidden   opacity-2  z-100 bg-gray-900/30 fixed backdrop-blur-md w-full     
+ h-full md:w-20'>
+          <div className=' max-h-[100vh] '>
             <nav className='absolute top-[30%]  ml-3'>
               <ul className='text-center justify-center  inline-block'>
                 {menuItems.map(({ href, title , HoverTips }) => (
@@ -81,7 +82,7 @@ export default function Layout({ children }) {
                 ))}
               </ul>
             </nav>
-            <div className='absolute bottom-[10%] '>
+            <div className='hidden-mob absolute bottom-[10%] '>
               {setting.map(({ href, title ,HoverTips}) => (
 
                <div  key={title} className=' m-2 '>
