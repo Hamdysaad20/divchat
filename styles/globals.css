@@ -26,6 +26,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bglollight {
+  background-image: url(../public//ico/bglight.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
